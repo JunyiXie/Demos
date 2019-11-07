@@ -26,21 +26,28 @@
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:imgView];
     
+    // load from assets
     UIImage *day = [UIImage imageNamed:@"Day"];
     UIImage *night = [UIImage imageNamed:@"Night"];
     
-    NSLog(@"%@", day.configuration);
-    NSLog(@"%@", night.configuration);
+    NSLog(@"day %@", day.configuration);
+    NSLog(@"night %@", night.configuration);
+    
+    // normal resources
+    UIImage *day1 = [UIImage imageNamed:@"Day1.jpg"];
+    UIImage *night1 = [UIImage imageNamed:@"Dight1.jpg"];
+    
+    NSLog(@"day1 %@", day1.configuration);
+    NSLog(@"night1 %@", night1.configuration);
     
     // 这个处理过了configuration
     imgView.image = [UIImage imageWithLightImageBlock:^UIImage * _Nonnull{
-        return day;
+        return day1;
     } darkImageBlock:^UIImage * _Nonnull{
-        return night;
+        return night1;
     }];
     
     self.overrideUserInterfaceStyle = UIUserInterfaceStyleUnspecified;
-
     // Do any additional setup after loading the view.
 }
 
