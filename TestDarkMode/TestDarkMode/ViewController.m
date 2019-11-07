@@ -16,36 +16,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    /// 1. 模拟用户切换 2. 模拟强制切换
-    [self currentStyle];
 
-
-    // 1. 模拟强切开关 变更
-    NSLog(@"force light");
-    [self setIsForceLightMode:YES];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self currentStyle];
-
-        NSLog(@"don't force light");
-        [self setIsForceLightMode:NO];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self currentStyle];
-
-            NSLog(@"force light");
-            [self setIsForceLightMode:YES];
-        });
-    });
-
-    NSLog(@"%@", [self keyWindow]);
-
-
+//    /// 1. 模拟用户切换 2. 模拟强制切换
+//    [self currentStyle];
+//
+//
+//    // 1. 模拟强切开关 变更
+//    NSLog(@"force light");
+//    [self setIsForceLightMode:YES];
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self currentStyle];
+//
+//        NSLog(@"don't force light");
+//        [self setIsForceLightMode:NO];
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [self currentStyle];
+//
+//            NSLog(@"force light");
+//            [self setIsForceLightMode:YES];
+//        });
+//    });
+//
+//    NSLog(@"%@", [self keyWindow]);
+//
+//    UIImage *image = [UIImage imageNamed:@""];
+//
+//    [image imageWithConfiguration:[image.configuration configurationWithTraitCollection:[UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark]]];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     // 强制改为light
-    [self setIsForceLightMode:YES];
+//    [self setIsForceLightMode:YES];
 
 }
 

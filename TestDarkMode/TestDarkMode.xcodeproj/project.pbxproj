@@ -14,6 +14,8 @@
 		9F05D32D2373120100F7B9A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F05D32C2373120100F7B9A8 /* Assets.xcassets */; };
 		9F05D3302373120100F7B9A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F05D32E2373120100F7B9A8 /* LaunchScreen.storyboard */; };
 		9F05D3332373120100F7B9A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F05D3322373120100F7B9A8 /* main.m */; };
+		9F098AC823744F2A00BDBEEC /* UIImage+DarkModeDynamic.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F098AC723744F2A00BDBEEC /* UIImage+DarkModeDynamic.m */; };
+		9F098ACB23745CB900BDBEEC /* TestCodeDynamicImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F098ACA23745CB900BDBEEC /* TestCodeDynamicImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		9F05D32F2373120100F7B9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F05D3312373120100F7B9A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F05D3322373120100F7B9A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F098AC623744F2A00BDBEEC /* UIImage+DarkModeDynamic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+DarkModeDynamic.h"; sourceTree = "<group>"; };
+		9F098AC723744F2A00BDBEEC /* UIImage+DarkModeDynamic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DarkModeDynamic.m"; sourceTree = "<group>"; };
+		9F098AC923745CB900BDBEEC /* TestCodeDynamicImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCodeDynamicImageViewController.h; sourceTree = "<group>"; };
+		9F098ACA23745CB900BDBEEC /* TestCodeDynamicImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCodeDynamicImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,10 @@
 				9F05D32E2373120100F7B9A8 /* LaunchScreen.storyboard */,
 				9F05D3312373120100F7B9A8 /* Info.plist */,
 				9F05D3322373120100F7B9A8 /* main.m */,
+				9F098AC623744F2A00BDBEEC /* UIImage+DarkModeDynamic.h */,
+				9F098AC723744F2A00BDBEEC /* UIImage+DarkModeDynamic.m */,
+				9F098AC923745CB900BDBEEC /* TestCodeDynamicImageViewController.h */,
+				9F098ACA23745CB900BDBEEC /* TestCodeDynamicImageViewController.m */,
 			);
 			path = TestDarkMode;
 			sourceTree = "<group>";
@@ -147,7 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F05D3282373120000F7B9A8 /* ViewController.m in Sources */,
+				9F098AC823744F2A00BDBEEC /* UIImage+DarkModeDynamic.m in Sources */,
 				9F05D3222373120000F7B9A8 /* AppDelegate.m in Sources */,
+				9F098ACB23745CB900BDBEEC /* TestCodeDynamicImageViewController.m in Sources */,
 				9F05D3332373120100F7B9A8 /* main.m in Sources */,
 				9F05D3252373120000F7B9A8 /* SceneDelegate.m in Sources */,
 			);
